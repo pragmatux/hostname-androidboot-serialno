@@ -1,0 +1,12 @@
+#!/bin/sh
+#
+# Set the kernel hostname and /etc/hostname to "device-${sn}", where sn is 
+# the parameter androidboot.serialno passed on the kernel command line.
+
+serial=$(sed -rn 's/.*androidboot\.serialno=([^ ]+).*/\1/p' </proc/cmdline)
+test -n "$serial" || exit 1
+
+name=device-$serial
+test $name = "$(hostname)" && exit 0
+hostname $name
+echo $name >/etc/hostname

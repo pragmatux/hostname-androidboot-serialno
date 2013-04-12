@@ -1,0 +1,15 @@
+Source: hostname-androidboot-serialno
+Section: admin
+Priority: extra
+Maintainer: Ryan Kuester <rkuester@insymbols.com>
+Build-Depends: debhelper (>= 8.0.0)
+Standards-Version: 3.9.3
+Vcs-Git: http://git.pragmatux.org/hostname-androidboot-serialno.git
+Vcs-Browser: http://git.pragmatux.org/hostname-androidboot-serialno.git
+
+Package: hostname-androidboot-serialno
+Architecture: all
+Depends: ${misc:Depends}
+Description: Set hostname with bootloader-supplied serial
+ Set the kernel hostname and /etc/hostname to "device-${sn}", where sn is 
+ the parameter androidboot.serialno passed on the kernel command line.

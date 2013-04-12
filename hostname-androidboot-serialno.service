@@ -1,0 +1,11 @@
+[Unit]
+Description=Set hostname to device-${androidboot.serialno}
+DefaultDependencies=no
+Before=basic.target
+
+[Service]
+Type=oneshot
+ExecStart=/bin/hostname-androidboot-serialno
+
+[Install]
+WantedBy=basic.target

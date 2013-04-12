@@ -1,0 +1,2 @@
+hostname-androidboot-serialno /bin
+hostname-androidboot-serialno.service /lib/systemd/system
