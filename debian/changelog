@@ -1,5 +1,5 @@
-hostname-androidboot-serialno (1.0~0) unstable; urgency=low
+hostname-androidboot-serialno (1.0) unstable; urgency=low
 
   * Initial Release.
 
- -- Ryan Kuester <rkuester@insymbols.com>  Fri, 12 Apr 2013 14:35:02 -0500
+ -- Ryan Kuester <rkuester@insymbols.com>  Tue, 16 Apr 2013 15:23:22 -0500
